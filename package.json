@@ -1,0 +1,14 @@
+{
+  "name": "frontendcult-reactapp",
+  "version": "1.0.0",
+  "description": "react application",
+  "main": "app.js",
+  "scripts": {
+    "test": "reactjs"
+  },
+  "author": "mahammad pasha",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
