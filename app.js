@@ -1,7 +1,5 @@
-const h1tag = React.createElement('h1',{},'hey , this is reactjs');
-console.log(h1tag);
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(h1tag);
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 /*
    <div id="parent">
