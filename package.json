@@ -4,7 +4,9 @@
   "description": "react application",
   "main": "app.js",
   "scripts": {
-    "test": "reactjs"
+    "test": "reactjs",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "author": "mahammad pasha",
   "license": "ISC",

@@ -3,6 +3,11 @@
 # npm install
 # npx parcel index.html
 
+# to start the project do run below commands
+ - npm install
+ - npm run start 
+ - npm run build
+
 # parcel 
 - Dev Build 
 - Local Server
