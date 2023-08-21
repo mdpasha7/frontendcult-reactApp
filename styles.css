@@ -1,3 +1,44 @@
-.parent-class {
-    color: brown;
+
+.header {
+    padding: 30px;
+    background-color: #00539C;
+    display: flex;
+}
+.body {
+    padding: 30px;
+    background-color: #EEA47F;
+    height:auto;
+}
+.footer {
+    padding: 30px;
+    background-color: #00539C;
+    color: white;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    margin: 10px;
+    font-size: 20px;
+    columns: white;
+    color: white;
+
+}
+.resto img {
+    width: 100px;
+    height: 150px;
+}
+.resto-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.resto {
+    height: auto;
+    background-color: white;
+    border: 2px solid green;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
 }

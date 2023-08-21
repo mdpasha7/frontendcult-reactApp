@@ -13,7 +13,7 @@ const nestedElements = React.createElement('div',{id:'parent'},'Hello all, i am 
 //Reactjs element is an object
 console.log(nestedElements);
 const root2 = ReactDOM.createRoot(document.getElementById('root2'));
-root2.render(nestedElements);// reactjs element - html element 
+//root2.render(nestedElements);// reactjs element - html element 
 
 //jsx 
 //babel-
@@ -29,11 +29,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // Everything in React Components - 2 ways 
 // 1) Class Based Components (OLD way)
 // 2) Functional Based Components (99.999 we use this)
+
+const userDetails = {
+  userName : 'Mohammad Pasha'
+}
 const ButtonCom = () => (
   <input type='text'/>
 );
 const HeaderComponent = () => (
-  <div class="header"><h1>My Header</h1><ButtonCom/></div>
+  <div class="header">
+    <h2>{userDetails.userName},What's on your mind?</h2></div>
 );
 const ContentComponent = () => (
   <div class="content"><h1>My Content</h1></div>
@@ -53,4 +58,4 @@ const HomePageComponent = () => (
 
 
 const root3 = ReactDOM.createRoot(document.getElementById('root3'));
-root.render(<HomePageComponent/>);
+//root.render(<HomePageComponent/>);
