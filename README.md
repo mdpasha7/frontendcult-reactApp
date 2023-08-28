@@ -19,3 +19,23 @@
 - Error handling
 - Hosting on HTTPS
 - Different Bundles like Dev and Prod
+
+# 2 Ways of export and import 
+ - 1. Default Way
+ - 2. Named way
+
+# JS- immediate invokation
+   onclick = {
+    () => {
+        // your code
+    }
+   }
+
+# UI Layer vs Data Layer
+
+# Hooks or StateHooks
+- Hooks is a normal JS method was developed by owners
+- 1. UseState() - Super Power
+- 2. UseEffect() - 
+
+
