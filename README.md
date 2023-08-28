@@ -37,5 +37,7 @@
 - Hooks is a normal JS method was developed by owners
 - 1. UseState() - Super Power
 - 2. UseEffect() - 
+      1.Callback function
+      2.Dependency array
 
 

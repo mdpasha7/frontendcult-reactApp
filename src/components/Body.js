@@ -1,6 +1,6 @@
 import RestoComponent from "./Resto";
 import restaurantData from "../utils/mockData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
@@ -128,6 +128,30 @@ const BodyComponent = () => {
          }
         
     ]);
+
+    useEffect( () => {
+      console.log('this is use-effect');
+      myfun1();
+      myfun2();
+      fetchData();
+    }, []);
+    function myfun1() {
+      console.log('this is use-effect function-1');
+    }
+    function myfun2() {
+      console.log('this is use-effect function-2');
+    }
+
+    console.log('some text');
+
+    const fetchData = async() => {
+      // javascript fetch method
+      const resdata = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4225132&lng=78.3478252&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+      const originaldata = await resdata.json();
+      const apiRestolist  = originaldata.data.cards[2].card.card.gridElements.infoWithStyle.restaurants;
+      //filteredRestaurants(apiRestolist);
+      console.log(apiRestolist);
+    }
 
     return (
         
