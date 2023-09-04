@@ -1,6 +1,12 @@
+import { useState } from "react";
 import { SITE_LOGO } from "../utils/constants";
 
+
 const HeaderComponent = () => {
+    
+    const [btnName, setbtnName] = useState("Login")
+    console.log("Hey React");
+    
     return (
         <div className="header">
             <div className="logo">
@@ -13,6 +19,10 @@ const HeaderComponent = () => {
                     <li>Services</li>
                     <li>Top Offers</li>
                     <li>My card</li>
+
+                    <button className="btn" value="Login" onClick={ () => {
+                        btnName == "Login" ? setbtnName("Logout") : setbtnName("Login"); // ternary operator
+                    }}>{btnName}</button>
                 </ul>
 
             </div>

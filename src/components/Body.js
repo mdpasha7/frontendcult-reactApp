@@ -11,6 +11,8 @@ const BodyComponent = () => {
 
     let [restaurantData, filteredRestaurants] = useState([]);
 
+    const [searchText, setsearchText] = useState('');
+
     console.log('Rendering Component')
 
     useEffect( () => {
@@ -167,6 +169,17 @@ const BodyComponent = () => {
     return (
         
         <div className="body">
+          <div className="search">
+            <input type="search" value={searchText}  
+            onChange={ (e) => {
+              setsearchText((e.target.value))
+            }}/>
+            <button onClick={ () => {
+              // Filter the restodata by searchText
+              alert(searchText);
+
+            }}>Search</button>
+          </div>
             <div className="top-rated">
                 <button className="top-resto" onClick={() => {
                     let filteredResto = restaurantData.filter( (resto) => resto.avgRating > 4);
